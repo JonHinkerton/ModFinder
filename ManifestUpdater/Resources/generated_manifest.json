@@ -1,5 +1,104 @@
 [
   {
+    "Name": "Allow Modded Achievements",
+    "Author": "AlterAsc",
+    "About": "Separate mod to allow achievements while modded.",
+    "Id": {
+      "Id": "AllowModdedAchievements",
+      "Type": "UMM"
+    },
+    "Service": {
+      "GitHub": {
+        "Owner": "alterasc",
+        "RepoName": "RT_AllowModdedAchievements",
+        "ReleaseFilter": null
+      },
+      "Nexus": null,
+      "GitGud": null,
+      "Name": "Github"
+    },
+    "Version": {
+      "Latest": {
+        "Version": "1.0.0",
+        "Url": "https://github.com/alterasc/RT_AllowModdedAchievements/releases/download/1.0.0/AllowModdedAchievements.zip",
+        "Changelog": ""
+      },
+      "LastUpdated": "2023-12-07T02:27:01",
+      "DeprecatedInGameVersion": "-",
+      "VersionHistory": [
+        {
+          "Version": "1.0.0",
+          "Url": null,
+          "Changelog": "Initial release"
+        }
+      ]
+    },
+    "LastChecked": "2023-12-15T16:42:44.5566102-05:00",
+    "Description": "# Allow Modded Achievements mod for Warhammer 40K: Rogue Trader\n\nSeparate mod to allow achievements while modded.\n\nIf you use Toy Box checkbox you don't need it.    \n\nIf you install both this and Toy Box, this mod applies regardless of Toy Box checkbox state.\n\n## Installation\n1. Unpack archive directly into `%userprofile%\\AppData\\LocalLow\\Owlcat Games\\Warhammer 40000 Rogue Trader\\UnityModManager\\` WITHOUT creating additional archive named folder.\n2. After running the game, navigate to UMM mod settings (press Ctrl-F10) and set settings as you need.\n\nResulting structure of already existing UnityModManager folder should be as follows\n- `AllowModdedAchievements` (folder)\n\t- `AllowModdedAchievements.dll`\n\t- `Info.info`\n\t- `OwlcatModificationManifest.json`\n\n## How to build (for developers only)\n1. Set up RoguePath environment variable to point to game folder\n2. Restore nuget packages\n3. Clean Solution.\n4. Build (note that on build output is automatically copied to installation path).\n\n\n## Credits\nTo Xenofell for making \"Allow Modded Achievements\" for Pathfinder: Wrath of the Righteous\nTo Petirep for creating image meme used for thumbnail\n",
+    "HomepageUrl": "https://www.nexusmods.com/warhammer40kroguetrader/mods/4",
+    "Tags": [
+      "Gameplay",
+      "Utilities"
+    ]
+  },
+  {
+    "Name": "Skill Check Assistant",
+    "Author": "AlterAsc",
+    "About": "Allows taking (rolling preset value) when doing skill checks. Available options are: roll normally, take 50, take 33, take 25, take 10, take 1. Settings are per individual skill.",
+    "Id": {
+      "Id": "SkillCheckAssistant",
+      "Type": "UMM"
+    },
+    "Service": {
+      "GitHub": {
+        "Owner": "alterasc",
+        "RepoName": "SkillCheckAssistant",
+        "ReleaseFilter": null
+      },
+      "Nexus": null,
+      "GitGud": null,
+      "Name": "Github"
+    },
+    "Version": {
+      "Latest": {
+        "Version": "1.3.0",
+        "Url": "https://github.com/alterasc/SkillCheckAssistant/releases/download/1.3.0/SkillCheckAssistant.zip",
+        "Changelog": ""
+      },
+      "LastUpdated": "2023-12-08T20:28:47",
+      "DeprecatedInGameVersion": "-",
+      "VersionHistory": [
+        {
+          "Version": "1.3.0",
+          "Url": null,
+          "Changelog": "- Additional option to roll check normally if chosen \"Take X\" is not enough to succeed\n- Fix for checks sometimes not being displayed in the log.\n\n"
+        },
+        {
+          "Version": "1.2.0",
+          "Url": null,
+          "Changelog": "Updated for game full release"
+        },
+        {
+          "Version": "1.1.0",
+          "Url": null,
+          "Changelog": "Support for characteristics checks"
+        },
+        {
+          "Version": "1.0.0",
+          "Url": null,
+          "Changelog": "Initial release"
+        }
+      ]
+    },
+    "LastChecked": "2023-12-15T16:42:44.5575264-05:00",
+    "Description": "# Skill Check Assistant mod for Warhammer 40K: Rogue Trader\n\nAllows taking (rolling preset value) when doing skill checks.\nAvailable options are: roll normally, take 50, take 33, take 25, take 10, take 1.\nSettings are per individual skill.\n\nBy default everything is rolled normally.\n\n### Added in 1.3.0\n\nOption `If chosen \"Take X\" value is not low enough to succeed, try rolling check normally.`\nDefault: off   \nThis is for when you want to take X when X is enough, and try to roll if it's not. For playstyle where you don't want to reload for easy checks, but want to make harder ones a gamble and make use of things that allow rerolling (like Advanced Skill).\n\n\n## Installation\n1. Unpack archive directly into `%userprofile%\\AppData\\LocalLow\\Owlcat Games\\Warhammer 40000 Rogue Trader\\UnityModManager\\` WITHOUT creating additional archive named folder.\n2. After running the game, navigate to UMM mod settings (press Ctrl-F10) and set settings as you need.\n\nResulting structure of already existing UnityModManager folder should be as follows\n- `SkillCheckAssistant` (folder)\n\t- `SkillCheckAssistant.dll`\n\t- `Info.info`\n\n## How to build (for developers only)\n1. Set up RoguePath environment variable to point to game folder\n2. Restore nuget packages\n3. Clean Solution.\n4. Build (note that on build output is automatically copied to installation path).\n",
+    "HomepageUrl": "https://www.nexusmods.com/warhammer40kroguetrader/mods/3",
+    "Tags": [
+      "Gameplay",
+      "Utilities"
+    ]
+  },
+  {
     "Name": "ToyBox (a bag of tricks)",
     "Author": "Narria",
     "About": "Toy Box is a cute and playful mod with 400+ cheats, tweaks and quality of life improvements. It was created in the spirit of Bag of Tricks & Cheat Menu but with a little different focus.",
@@ -19,17 +118,17 @@
     },
     "Version": {
       "Latest": {
-        "Version": "1.5.9a",
-        "Url": "https://github.com/xADDBx/ToyBox/releases/download/RTv1.5.9a/0ToyBox0-Rogue.zip",
+        "Version": "1.5.9b",
+        "Url": "https://github.com/xADDBx/ToyBox/releases/download/RTv1.5.9b/0ToyBox0-Rogue.zip",
         "Changelog": ""
       },
-      "LastUpdated": "2023-12-15T15:13:51",
+      "LastUpdated": "2023-12-15T21:33:20",
       "DeprecatedInGameVersion": "-",
       "VersionHistory": [
         {
-          "Version": "1.5.9a",
+          "Version": "1.5.9b",
           "Url": null,
-          "Changelog": "### ToyBox Rogue - Ver 1.5.9a built for Rogue Trader 1.0.69\n* (***ADDB***) Infinite Actions now no longer works for enemies.\n* (***ADDB***) Added new option to really don't use AP (even for attacks and stuff).\n* (***ADDB***) Fixed Search 'n Pick gets stuck on collation in Progression Category.\n* (***ADDB***) Added option to pick character filter in Search 'n Pick window.\n* (***ADDB***) Did some work at Camera Tweaks in Enhanced UI; soem stuff works now; some not.\n* (***ADDB***) Added option to change/freeze Veil Thickness.\n* (***ADDB***) Maybe Removed Buff Multiplier error.\n* (***ADDB***) Recompiled against new version."
+          "Changelog": "### ToyBox Rogue - Ver 1.5.9b built for Rogue Trader 1.0.69\n* (***ADDB***) Fixed broken Custom Portrait Editor.\n* (***ADDB***) Infinite Actions now no longer works for enemies.\n* (***ADDB***) Added new option to really don't use AP (even for attacks and stuff).\n* (***ADDB***) Fixed Search 'n Pick gets stuck on collation in Progression Category.\n* (***ADDB***) Added option to pick character filter in Search 'n Pick window.\n* (***ADDB***) Did some work at Camera Tweaks in Enhanced UI; soem stuff works now; some not.\n* (***ADDB***) Added option to change/freeze Veil Thickness.\n* (***ADDB***) Maybe Removed Buff Multiplier error.\n* (***ADDB***) Recompiled against new version."
         },
         {
           "Version": "1.5.9",
@@ -43,7 +142,7 @@
         }
       ]
     },
-    "LastChecked": "2023-12-15T16:25:57.531455-05:00",
+    "LastChecked": "2023-12-15T16:42:44.5575489-05:00",
     "Description": "# About\nToy Box is a cute and playful mod with 500+ cheats, tweaks and quality of life improvements for Pathfinder: WoTR.\n\nIt was created in the spirit of Bag of Tricks & Cheat Menu but with a little different focus, It offers a powerful and convenient way to edit:\n- the party composition\n- stats\n- search and add to party members:\n  - Feats\n  - Features\n  - Items\n  - etc.\n\nDownload: [nexusmods.com](https://www.nexusmods.com/pathfinderwrathoftherighteous/mods/8)\n\nThere are preview builds available on the official [Owlcat Discord](https://discord.gg/Owlcat) pinned in the [#mod-user-general](https://discord.com/channels/645948717400064030/815735034514112512) channel\n\n# How to contribute\n- Make sure you have Visual Studio 22 (or current) installed and other tools you might want.  See [WotR Modding Beginners Guide](https://github.com/WittleWolfie/OwlcatModdingWiki/wiki/Beginner-Guide) for more info\n- on the [main repository page](https://github.com/cabarius/ToyBox) click on \"fork\" in the upper-right corner\n![alt text](./documentation-assets/github-fork.jpg \"github fork button position\")\n- on your personal fork of the repository clone to your computer ([multiple method avaiable, chose the one you prefeer](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository))\n![alt text](./documentation-assets/github-clone-1.jpg \"github code button position\")\n![alt text](./documentation-assets/github-clone-2.jpg \"github code button preview\")\n- create a branch in your fork with a short description of your contribution (e.g. `git checkout -b my-contribution-descriptor`)\n\n![alt text](./documentation-assets/github-new-branch.jpg \"git checkout -b example\")\n- do your magic with the code\n- push to your fork\n- open a pull-request from your fork to the main repository\n\n# Development Setup\n1. Install ToyBox mod into your game via Unity Mod Manager\n1. Clone the git repo\n1. You can contribute to Rogue Trader, Wrath or both of them. If you only want to contribute to one you can unload the unused one in Visual Studio and only need to setup the variable for the one you need.\n1. Locate the install folder of Pathfinder Wrath of the Righteous and/or Warhammer 40,000 Rogue Trader.\n1. Go to System Properties > Environment Variables and add WrathPath and/or RoguePath with a value that looks like this:\n        `WrathPath`   `C:\\Program Files (x86)\\Steam\\steamapps\\common\\Pathfinder Second Adventure`\n\t\t`RoguePath`   `C:\\Program Files (x86)\\Steam\\steamapps\\common\\Warhammer 40,000 Rogue Trader`\n1.  First time and when the game updates make sure you clean the solution to trigger the publicize step\n1. build the solution debug and it will automatically build and install into the mod folder in the game\n1.  when you rebuild you can go to the mod and hit the reload button at the top to make it use the latest\n1. **Important** If you are adding a feature or fixing a bug please add a release note entry to the *ReadMe.md*.  This is how we tell our the world about your great work^_^\n    1. Find the highest release name near the top. It will look something like `### Ver 1.3.7 (Coming Soon)`. \n    1. Usually it is 0.0.1 higher than the current release but please check on Nexus.  If not please add a new Version entry at the top for the next release using proper markdown. \n    1. Don't worry too much about getting this right as Narria Cabarius will clean this up on merge so when in doubt add a new version.\n    1. format your release note like like this:\n    >```* (Jane/JoeCoolCollaborator) added a Coolness Multiplier in Bag of Tricks that makes your main character that much more awesome!```\n\n**PS**: \n\nLearn to mod Owlcat Games (Kingmaker and Wrath of the Righteous) [here](https://github.com/spacehamster/OwlcatModdingWiki/wiki/Beginner-Guide)\n        \n[Join our discord](https://discord.gg/owlcat) and go to #mod-dev-technical and #mod-user-general meet the mod authors: **Narria** and her kind collaborators **ArcaneTrixter**, **Aphelion (SonicZentropy)**, **Delth** and others.  We love to chat about modding and teaching others to mod.\n",
     "HomepageUrl": "https://www.nexusmods.com/warhammer40kroguetrader/mods/1",
     "Tags": [
