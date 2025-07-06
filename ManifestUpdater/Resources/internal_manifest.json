@@ -535,6 +535,23 @@
     },
 
     {
+        "Name": "Little Birds",
+        "Author": "jonHinkerton",
+        "Id": {
+            "Id": "jhLittleBirds",
+            "Type": "UMM"
+        },
+        "Service": {
+            "Nexus": {
+                "ModID": "270"
+            }
+        },
+        "About": "Makes big distracting birds into little distracting birds.",
+        "HomepageUrl": "https://www.nexusmods.com/warhammer40kroguetrader/mods/270",
+        "Tags": [ "Visuals" ]
+    },
+    
+    {
         "Name": "Medicae Archetype",
         "Author": "jonHinkerton",
         "Id": {
